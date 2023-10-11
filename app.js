@@ -22,13 +22,13 @@ var divide = add % 3;
 
 {document.write("<td><p>Value after variable declaration is undefined </p>")}
 
-{document.write("<p>Initial value: " + value +"</p>")} //5
+{document.write("<p>Initial value: " + --value +"</p>")} //5
 
-{document.write("Value after increment is: " + value +"</p>")} //6
+{document.write("Value after increment is: " + ++value +"</p>")} //6
 
-{document.write("<p>Value after addition is: " + add +"</p>" )} //13
+{document.write("<p>Value after addition is: " + ++add +"</p>" )} //13
 
-{document.write("<p>Value after decerment is: " + add +"</p>" )} //12
+{document.write("<p>Value after decerment is: " + --add +"</p>" )} //12
 
 {document.write("<p>The remainder is: " + divide + "</p></td>")} //0
 
@@ -104,7 +104,9 @@ document.write("<br><h2> STEP 6</h2>")
         var Number = 550;
         var show = "Real Number is 550, <br> \nthen following steps are appyly to it:<br> \na. Add 5 <br> \nb. Multiply by 10 <br> \nc. Divide the result by 2 <br> \nThen Answer is:"
 
-        var answer = Number + 5 * 10 / 2;
+        var answer = Number + 5 ;
+        var answer = answer * 10 ;
+        var answer = answer / 2 ;
 
         document.write(show);
         
